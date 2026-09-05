@@ -1,0 +1,31 @@
+{
+    "cache_ttl": 300,
+    "cache_max": 1000,
+    "rate_limit": 1.0,
+    "max_retries": 3,
+    "countries": ["US", "GB", "DE", "FR", "CA"],
+    "use_curl_cffi": true,
+    "use_redis": false,
+    "redis_url": "redis://localhost:6379",
+    "dns_suffix": "_sonos._udp.local",
+    "dns_port": 5353,
+    "dns_host": "127.0.0.1",
+    "dns_flood_max_qps": 50,
+    "dns_flood_burst": 100,
+    "openai_model": "gpt-4o",
+    "openai_base_url": "https://api.openai.com/v1",
+    "prometheus_port": 9090,
+    "circuit_breaker_failure_threshold": 5,
+    "circuit_breaker_recovery_timeout": 30,
+    "autoclaw": {
+        "port": 31000,
+        "host": "127.0.0.1",
+        "workers": 3,
+        "worker_class": "eventlet",
+        "max_requests": 1000,
+        "max_requests_jitter": 50,
+        "graceful_timeout": 30,
+        "token_refresh_interval": 3600,
+        "enable_encryption": true
+    }
+}
