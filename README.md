@@ -192,6 +192,20 @@ python3 --version; pip --version; git --version
 
 ---
 
+## 📈 Version Changes Timeline
+
+| Version | Date | Changes |
+|---------|------|---------|
+| **Proxy-Installer 1.0.0** | 2026-09-05 `912da7b` | Standalone — adds `curl \| bash` one-liner (`marktantongco/owl-engine-proxy-installer`), PEP 668-aware header, WIIFY welcome (same instruction set as `heretic-installer` 1.1.0). Based on Installer **4.0.0** (828 lines, 12 phases). |
+| **Engine 9.0.0** | 2026-08-29 `6add1da` | `pyproject.toml: version = "9.0.0"` — lazy imports, dead code removal, full test suite (78/78), coverage 92%, audit 41 fixes. |
+| **Installer 4.0.0** | 2026-08-24 `3c6af54` + `20a9393` | Harden `set -e` arithmetic, xargs traps, quoting, `Pages index.html` generation. Pages at https://marktantongco.github.io/owl-dns-synergy/ |
+| **Installer 4.0.0** | 2026-08-24 `dbb18a2` | Production-grade: `pages.yml` + `ci.yml`, worktree `CONTRIBUTING.md`, keysync (`AUTOCLAW_TOKEN_KEY`), Prometheus 12 gauges. |
+| **Product 1.0.0** | 2026-08-06 `a13e2c2` | `owl-dns-synergy` v1.0.0 — Unified Dual-Channel Resilient Access Engine (OWL-AGENT v4.2 + LLM-DNS-Proxy, 7-channel cascade, Fernet, Circuit Breaker, `PRODUCT_VERSION="1.0.0"`). Tag `v1.0.0`. |
+
+> Full installer changelog: [`CHANGELOG.md`](CHANGELOG.md) — upstream engine log: `~/aiworkspace/owl-engine` (`git log --oneline`)
+
+---
+
 ## 📁 What's Inside This Repo
 
 ```
